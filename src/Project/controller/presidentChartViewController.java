@@ -19,64 +19,64 @@ public class presidentChartViewController implements Initializable {
 	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private PieChart pieChart;
 	@FXML private LineChart<String, Integer> lineChart;
-	@FXML private Text presidentParty; // ����� ����
-	@FXML private Text presidentName; // ����� �̸�
-	@FXML private Text firstCandidateName; // �缱�� �̸�
-	@FXML private Text secondCandidateName; // ������ �̸�
-	@FXML private Text firstCandidateParty; // �缱�� ����
-	@FXML private Text secondCandidateParty; // ������ ����
-	@FXML private Text firstCandidateVoteRate; // �缱�� ��ǥ��
-	@FXML private Text secondCandidateVoteRate; // ������ ��ǥ��
-	@FXML private Text firstCandidateVote; // �缱�� ��ǥ��
-	@FXML private Text secondCandidateVote; // ������ ��ǥ��
-	@FXML private ImageView presidentImage; // ����� ����
-	@FXML private Rectangle firstCandidateVoteGraph; // �缱�� ��ǥ �׷���
-	@FXML private Rectangle secondCandidateVoteGraph; // ������ ��ǥ �׷���
-	@FXML private SplitMenuButton electionList; // ���� ���
-	@FXML private Text party1; // ���� 1
-	@FXML private Text party2; // ���� 2
-	@FXML private Text party3; // ���� 3
-	@FXML private Text party4; // ���� 4
-	@FXML private Text party5; // ���� 5
+	@FXML private Text presidentParty; // 대통령 정당
+	@FXML private Text presidentName; // 대통령 이름
+	@FXML private Text firstCandidateName; // 당선인 이름
+	@FXML private Text secondCandidateName; // 경쟁자 이름
+	@FXML private Text firstCandidateParty; // 당선인 정당
+	@FXML private Text secondCandidateParty; // 경쟁자 정당
+	@FXML private Text firstCandidateVoteRate; // 당선인 득표율
+	@FXML private Text secondCandidateVoteRate; // 경쟁자 득표율
+	@FXML private Text firstCandidateVote; // 당선인 득표수
+	@FXML private Text secondCandidateVote; // 경쟁자 득표수
+	@FXML private ImageView presidentImage; // 대통령 사진
+	@FXML private Rectangle firstCandidateVoteGraph; // 당선인 투표 그래프
+	@FXML private Rectangle secondCandidateVoteGraph; // 경쟁자 투표 그래프
+	@FXML private SplitMenuButton electionList; // 선거 목록
+	@FXML private Text party1; // 정당 1
+	@FXML private Text party2; // 정당 2
+	@FXML private Text party3; // 정당 3
+	@FXML private Text party4; // 정당 4
+	@FXML private Text party5; // 정당 5
 	
-	@FXML private ImageView chungcheongbukdo; // ��û�ϵ�
-	@FXML private ImageView sejong; // ����
-	@FXML private ImageView daejeon; // ����
-	@FXML private ImageView jeollabukdo; // ����ϵ�
-	@FXML private ImageView gyeongsangnamdo; // ��󳲵�
-	@FXML private ImageView daegu; // �뱸
-	@FXML private ImageView ulsan; // ���
-	@FXML private ImageView busan; // �λ�
-	@FXML private ImageView gwangju; // ����
-	@FXML private ImageView jejudo; // ���ֵ�
-	@FXML private ImageView gyeonggido; // ��⵵
-	@FXML private ImageView gangwondo; // ������
-	@FXML private ImageView incheon; // ��õ
-	@FXML private ImageView seoul; // ����
-	@FXML private ImageView jeollanamdo; // ���󳲵�
-	@FXML private ImageView gyeongsangbukdo; // ���ϵ�
-	@FXML private ImageView chungcheongnamdo; // ��û����
+	@FXML private ImageView chungcheongbukdo; // 충청북도
+	@FXML private ImageView sejong; // 세종
+	@FXML private ImageView daejeon; // 대전
+	@FXML private ImageView jeollabukdo; // 전라북도
+	@FXML private ImageView gyeongsangnamdo; // 경상남도
+	@FXML private ImageView daegu; // 대구
+	@FXML private ImageView ulsan; // 울산
+	@FXML private ImageView busan; // 부산
+	@FXML private ImageView gwangju; // 광주
+	@FXML private ImageView jejudo; // 제주도
+	@FXML private ImageView gyeonggido; // 경기도
+	@FXML private ImageView gangwondo; // 강원도
+	@FXML private ImageView incheon; // 인천
+	@FXML private ImageView seoul; // 서울
+	@FXML private ImageView jeollanamdo; // 전라남도
+	@FXML private ImageView gyeongsangbukdo; // 경상북도
+	@FXML private ImageView chungcheongnamdo; // 충청남도
 
 
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
     	 XYChart.Series<String, Integer> series = null;
     	 series = new XYChart.Series<String, Integer>();
-         // series�� ���� ������ �߰� 
+         // series에 개별 데이터 추가 
          series.getData().add(new XYChart.Data<String, Integer>("2018",30));
          series.getData().add(new XYChart.Data<String, Integer>("2019",40));
          series.getData().add(new XYChart.Data<String, Integer>("2020",50));
          series.getData().add(new XYChart.Data<String, Integer>("2021",30));
 
-         series.setName("������");
+         series.setName("지지율");
 
-         // ������Ʈ�� series �߰� 
+         // 라인차트에 series 추가 
          lineChart.getData().add(series);
     	pieChart.setData(FXCollections.observableArrayList(
-    		    new PieChart.Data("������ ��", 20),
-    		    new PieChart.Data("���Ҿ���ִ�", 32),
-    		    new PieChart.Data("���Ǵ�", 24),
-    		    new PieChart.Data("�����Ǵ�", 7)
+    		    new PieChart.Data("국민의 힘", 20),
+    		    new PieChart.Data("더불어민주당", 32),
+    		    new PieChart.Data("정의당", 24),
+    		    new PieChart.Data("국민의당", 7)
     		));
     }
     

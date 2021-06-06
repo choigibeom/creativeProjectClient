@@ -30,6 +30,7 @@ public class mainViewController implements Initializable {
     private Socket socket;
     private ObjectOutputStream os;
     private ObjectInputStream is;
+
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
         liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
@@ -68,7 +69,7 @@ public class mainViewController implements Initializable {
                         primaryStage.setScene(scene);
                     });
                     Platform.runLater(() -> {
-                        primaryStage.setTitle("�ǽð� ����ǥ ��Ȳ");
+                        primaryStage.setTitle("실시간 투개표 현황");
                     });
                 }
             };
@@ -112,7 +113,7 @@ public class mainViewController implements Initializable {
                         primaryStage.setScene(scene);
                     });
                     Platform.runLater(() -> {
-                        primaryStage.setTitle("�ĺ��� �� ���� ����");
+                        primaryStage.setTitle("후보자 및 선거 정보");
                     });
                 }
             };
@@ -135,7 +136,7 @@ public class mainViewController implements Initializable {
                         primaryStage.setScene(scene);
                     });
                     Platform.runLater(() -> {
-                        primaryStage.setTitle("���� �缱 ����");
+                        primaryStage.setTitle("역대 당선 추이");
                     });
                 }
             };

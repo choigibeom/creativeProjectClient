@@ -17,35 +17,35 @@ import javafx.scene.text.Text;
 public class liveVoteInfoAddController implements Initializable {
 	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private ImageView electionHistoryInfoBtn;
-	@FXML private Arc voteBallotRateGraph; // ��ǥ�� ����
-	@FXML private Text voteBallotRate; // ��ǥ��
-	@FXML private SplitMenuButton electionList; // ���� ���
-	@FXML private ImageView regionImage; // ���� ����
-	@FXML private Text region; // ����
-	@FXML private Rectangle firstCandidateVoteGraph; // ù��°(����) �ĺ� ��ǥ �׷���
-	@FXML private Rectangle secondCandidateVoteGraph; // ù��°(����) �ĺ� ��ǥ �׷���
-	@FXML private TextField voteRate; // ��ǥ��
-	@FXML private TextField voteCount; // ��ǥ��
-	@FXML private TextField candidateCount; // �����μ�
+	@FXML private Arc voteBallotRateGraph; // 개표율 도형
+	@FXML private Text voteBallotRate; // 개표율
+	@FXML private SplitMenuButton electionList; // 선거 목록
+	@FXML private ImageView regionImage; // 지역 사진
+	@FXML private Text region; // 지역
+	@FXML private Rectangle firstCandidateVoteGraph; // 첫번째(좌측) 후보 득표 그래프
+	@FXML private Rectangle secondCandidateVoteGraph; // 첫번째(좌측) 후보 투표 그래프
+	@FXML private TextField voteRate; // 투표율
+	@FXML private TextField voteCount; // 개표수
+	@FXML private TextField candidateCount; // 선거인수
 	@FXML private Text electionTitle;
-	@FXML private Text firstCandidateName; // ù��°(����) �ĺ� �̸�
-	@FXML private Text secondCandidateName; // �ι�°(����) �ĺ� �̸�
-	@FXML private Text firstCandidateNumber; // ù��°(����) �ĺ� ��ȣ
-	@FXML private Text secondCanddiateNumber; // �ι�°(����) �ĺ� ��ȣ
-	@FXML private Text firstCandidateParty; // ù��°(����) �ĺ� ����
-	@FXML private Text secondCandidateParty; // �ι�°(����) �ĺ� ����
-	@FXML private Text firstCandidateVote; // ù��°(����) �ĺ� ��ǥ��
-	@FXML private Text secondCandidateVote; // �ι�°(����) �ĺ� ��ǥ�� 
-	@FXML private Text firstCandidateVoteRate; // ù��°(����) �ĺ� ��ǥ��
-	@FXML private Text secondCandidateVoteRate; // �ι�°(����) �ĺ� ��ǥ��
+	@FXML private Text firstCandidateName; // 첫번째(좌측) 후보 이름
+	@FXML private Text secondCandidateName; // 두번째(우측) 후보 이름
+	@FXML private Text firstCandidateNumber; // 첫번째(좌측) 후보 기호
+	@FXML private Text secondCanddiateNumber; // 두번째(우측) 후보 기호
+	@FXML private Text firstCandidateParty; // 첫번째(좌측) 후보 정당
+	@FXML private Text secondCandidateParty; // 두번째(좌측) 후보 정당
+	@FXML private Text firstCandidateVote; // 첫번째(좌측) 후보 득표수
+	@FXML private Text secondCandidateVote; // 두번째(우측) 후보 득표수 
+	@FXML private Text firstCandidateVoteRate; // 첫번째(좌측) 후보 득표율
+	@FXML private Text secondCandidateVoteRate; // 두번째(우측) 후보 득표율
 
     public void initialize(URL location, ResourceBundle resoruces) {
     	setBallotRateGraph(0.5);
-    	addElectionList("���� �õ����� ����");
-    	addElectionList("�λ� �õ����� ����");
+    	addElectionList("서울 시도지사 선거");
+    	addElectionList("부산 시도지사 선거");
     	setFirstCandidateVoteGraph(0.6);
     	setSecondCandidateVoteGraph(0.3);
-    	setRegionImage("�λ�");
+    	setRegionImage("부산");
     	setVoteRate("50.4");
     }
     
@@ -73,7 +73,7 @@ public class liveVoteInfoAddController implements Initializable {
     	{
         	Thread thread = new Thread() {
         		public void run() {
-        	    	regionImage.setImage(new Image(getClass().getResourceAsStream("../img/catogram/�Ķ�/"+ region +"-�Ķ�-1.png")));
+        	    	regionImage.setImage(new Image(getClass().getResourceAsStream("../img/catogram/파랑/"+ region +"-파랑-1.png")));
         		}
         	};
         	thread.setDaemon(true);

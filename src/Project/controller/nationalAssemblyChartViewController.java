@@ -23,60 +23,60 @@ public class nationalAssemblyChartViewController implements Initializable {
 	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private PieChart pieChart;
 	@FXML private LineChart<String, Integer> lineChart;
-	@FXML private SplitMenuButton electionList; // ���� ���
-	@FXML private TableView<ElectionResultDataModel> electionResult; // ���� ���
-	@FXML private TableColumn<ElectionResultDataModel, String> partyCol; // ����
-	@FXML private TableColumn<ElectionResultDataModel, String> constituencyCol; // ������
-	@FXML private TableColumn<ElectionResultDataModel, String> proportionalRepresentationCol; // ��ʴ�ǥ
-	@FXML private TableColumn<ElectionResultDataModel, String> amountCol; // ����
-	@FXML private TableColumn<ElectionResultDataModel, String> rateCol; // ����
-	@FXML private Text party1; // ���� 1
-	@FXML private Text party2; // ���� 2
-	@FXML private Text party3; // ���� 3
-	@FXML private Text party4; // ���� 4
-	@FXML private Text party5; // ���� 5
+	@FXML private SplitMenuButton electionList; // 선거 목록
+	@FXML private TableView<ElectionResultDataModel> electionResult; // 선거 결과
+	@FXML private TableColumn<ElectionResultDataModel, String> partyCol; // 정당
+	@FXML private TableColumn<ElectionResultDataModel, String> constituencyCol; // 지역구
+	@FXML private TableColumn<ElectionResultDataModel, String> proportionalRepresentationCol; // 비례대표
+	@FXML private TableColumn<ElectionResultDataModel, String> amountCol; // 총합
+	@FXML private TableColumn<ElectionResultDataModel, String> rateCol; // 비율
+	@FXML private Text party1; // 정당 1
+	@FXML private Text party2; // 정당 2
+	@FXML private Text party3; // 정당 3
+	@FXML private Text party4; // 정당 4
+	@FXML private Text party5; // 정당 5
     
     ObservableList<ElectionResultDataModel>myList = FXCollections.observableArrayList(
-    		new ElectionResultDataModel(new SimpleStringProperty("���Ҿ���ִ�"), new SimpleStringProperty("163��"), new SimpleStringProperty("17��"), new SimpleStringProperty("180��"), new SimpleStringProperty("60.0%"))
+    		new ElectionResultDataModel(new SimpleStringProperty("더불어민주당"), new SimpleStringProperty("163석"), new SimpleStringProperty("17석"), new SimpleStringProperty("180석"), new SimpleStringProperty("60.0%"))
     		);
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
     	 XYChart.Series<String, Integer> series1 = null;
     	 series1 = new XYChart.Series<String, Integer>();
-         // series�� ���� ������ �߰� 
+         // series에 개별 데이터 추가 
          series1.getData().add(new XYChart.Data<String, Integer>("2012",30));
          series1.getData().add(new XYChart.Data<String, Integer>("2016",40));
          series1.getData().add(new XYChart.Data<String, Integer>("2020",50));
 
-         series1.setName("��������");
+         series1.setName("국민의힘");
          
     	 XYChart.Series<String, Integer> series2 = null;
     	 series2 = new XYChart.Series<String, Integer>();
-         // series�� ���� ������ �߰� 
+         // series에 개별 데이터 추가 
          series2.getData().add(new XYChart.Data<String, Integer>("2012",40));
          series2.getData().add(new XYChart.Data<String, Integer>("2016",30));
          series2.getData().add(new XYChart.Data<String, Integer>("2020",15));
 
-         series2.setName("���Ҿ���ִ�");
+         series2.setName("더불어민주당");
          
     	 XYChart.Series<String, Integer> series3 = null;
     	 series3 = new XYChart.Series<String, Integer>();
-         // series�� ���� ������ �߰� 
+         // series에 개별 데이터 추가 
          series3.getData().add(new XYChart.Data<String, Integer>("2012",5));
          series3.getData().add(new XYChart.Data<String, Integer>("2016",2));
          series3.getData().add(new XYChart.Data<String, Integer>("2020",3));
 
-         series3.setName("�����Ǵ�");
+         series3.setName("국민의당");
 
-         // ������Ʈ�� series �߰� 
+         // 라인차트에 series 추가 
          lineChart.getData().add(series1);
          lineChart.getData().add(series2);
          lineChart.getData().add(series3);
     	pieChart.setData(FXCollections.observableArrayList(
-    		    new PieChart.Data("������ ��", 20),
-    		    new PieChart.Data("���Ҿ���ִ�", 32),
-    		    new PieChart.Data("���Ǵ�", 24),
-    		    new PieChart.Data("�����Ǵ�", 7)
+    		    new PieChart.Data("국민의 힘", 20),
+    		    new PieChart.Data("더불어민주당", 32),
+    		    new PieChart.Data("정의당", 24),
+    		    new PieChart.Data("국민의당", 7)
     		));
     	partyCol.setCellValueFactory(cellData->cellData.getValue().partyProperty());
     	constituencyCol.setCellValueFactory(cellData->cellData.getValue().constituencyProperty());

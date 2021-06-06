@@ -16,7 +16,7 @@ public class Main extends Application {
         Font.loadFont(getClass().getResourceAsStream("font/NanumSquareB.ttf"), 16);
         Font.loadFont(getClass().getResourceAsStream("font/NanumSquareEB.ttf"), 16);
         Parent root = FXMLLoader.load(getClass().getResource("fxml/logoView.fxml"));
-        primaryStage.setTitle("����ο� ��ġ��Ȱ");
+        primaryStage.setTitle("슬기로운 정치생활");
         primaryStage.setScene(new Scene(root, 512, 540));
         primaryStage.show();
         changeView(primaryStage);
@@ -35,7 +35,7 @@ public class Main extends Application {
         		public void run() {
         			try { Thread.sleep(1500); } catch (InterruptedException e) {}
         			Platform.runLater(()->{primaryStage.setScene(scene);});
-        			Platform.runLater(()->{primaryStage.setTitle("����ȭ��");});
+        			Platform.runLater(()->{primaryStage.setTitle("메인화면");});
         		}
         	};
         	thread.setDaemon(true);

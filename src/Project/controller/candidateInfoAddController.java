@@ -17,14 +17,14 @@ import javafx.scene.layout.AnchorPane;
 
 public class candidateInfoAddController implements Initializable {
 	@FXML private ImageView candidateListBtn;
-	@FXML private TextField name; // �̸�
-	@FXML private TextField number;  // ��ȣ
-	@FXML private TextField partyName; // �����
-	@FXML private TextField birth; // �������
-	@FXML private ImageView candidateImage; // �ĺ� ����
-	@FXML private ImageView candidatePartyImage; // �ĺ� ���� ����
-	@FXML private TextArea career; // ���
-	@FXML private TextArea pledge; // ����
+	@FXML private TextField name; // 이름
+	@FXML private TextField number;  // 기호
+	@FXML private TextField partyName; // 정당명
+	@FXML private TextField birth; // 생년월일
+	@FXML private ImageView candidateImage; // 후보 사진
+	@FXML private ImageView candidatePartyImage; // 후보 정당 사진
+	@FXML private TextArea career; // 경력
+	@FXML private TextArea pledge; // 공약
 
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {

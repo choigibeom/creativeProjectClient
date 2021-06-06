@@ -17,41 +17,41 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class candidateList2AddController implements Initializable {
-	@FXML private Text election2Title; // ����2 �̸�
-	@FXML private Text election2VoteDay; // ����2 ������
-	@FXML private ImageView election2Mark; // ����2 ���ű��� ��ũ
-	@FXML private SplitMenuButton constituencyList; // ���ű� ���
-	@FXML private ImageView candidate1; // �ĺ�1 �̹���
-	@FXML private ImageView candidate2; // �ĺ�2 �̹���
-	@FXML private ImageView candidate3; // �ĺ�3 �̹���
-	@FXML private ImageView candidate4; // �ĺ�4 �̹���
-	@FXML private ImageView candidate5; // �ĺ�5 �̹���
-	@FXML private ImageView candidate6; // �ĺ�6 �̹���
-	@FXML private ImageView candidate7; // �ĺ�7 �̹���
-	@FXML private ImageView candidate8; // �ĺ�8 �̹���
-	@FXML private ImageView candidate9; // �ĺ�9 �̹���
-	@FXML private ImageView candidate10; // �ĺ�10 �̹���
-	@FXML private ImageView candidate11; // �ĺ�11 �̹���
-	@FXML private ImageView candidate12; // �ĺ�12 �̹���
-	@FXML private ImageView candidate13; // �ĺ�13 �̹���
-	@FXML private ImageView candidate14; // �ĺ�14 �̹���
-	@FXML private ImageView candidate15; // �ĺ�15 �̹���
-	@FXML private Text candidate1Name; // �ĺ�1 �̸�
-	@FXML private Text candidate2Name; // �ĺ�2 �̸�
-	@FXML private Text candidate3Name; // �ĺ�3 �̸�
-	@FXML private Text candidate4Name; // �ĺ�4 �̸�
-	@FXML private Text candidate5Name; // �ĺ�5 �̸�
-	@FXML private Text candidate6Name; // �ĺ�6 �̸�
-	@FXML private Text candidate7Name; // �ĺ�7 �̸�
-	@FXML private Text candidate8Name; // �ĺ�8 �̸�
-	@FXML private Text candidate9Name; // �ĺ�9 �̸�
-	@FXML private Text candidate10Name; // �ĺ�10 �̸�
-	@FXML private Text candidate11Name; // �ĺ�11 �̸�
-	@FXML private Text candidate12Name; // �ĺ�12 �̸�
-	@FXML private Text candidate13Name; // �ĺ�13 �̸�
-	@FXML private Text candidate14Name; // �ĺ�14 �̸�
-	@FXML private Text candidate15Name; // �ĺ�15 �̸�
 
+	@FXML private Text election2Title; // 선거2 이름
+	@FXML private Text election2VoteDay; // 선거2 선거일
+	@FXML private ImageView election2Mark; // 선거2 선거구분 마크
+	@FXML private SplitMenuButton constituencyList; // 선거구 목록
+	@FXML private ImageView candidate1; // 후보1 이미지
+	@FXML private ImageView candidate2; // 후보2 이미지
+	@FXML private ImageView candidate3; // 후보3 이미지
+	@FXML private ImageView candidate4; // 후보4 이미지
+	@FXML private ImageView candidate5; // 후보5 이미지
+	@FXML private ImageView candidate6; // 후보6 이미지
+	@FXML private ImageView candidate7; // 후보7 이미지
+	@FXML private ImageView candidate8; // 후보8 이미지
+	@FXML private ImageView candidate9; // 후보9 이미지
+	@FXML private ImageView candidate10; // 후보10 이미지
+	@FXML private ImageView candidate11; // 후보11 이미지
+	@FXML private ImageView candidate12; // 후보12 이미지
+	@FXML private ImageView candidate13; // 후보13 이미지
+	@FXML private ImageView candidate14; // 후보14 이미지
+	@FXML private ImageView candidate15; // 후보15 이미지
+	@FXML private Text candidate1Name; // 후보1 이름
+	@FXML private Text candidate2Name; // 후보2 이름
+	@FXML private Text candidate3Name; // 후보3 이름
+	@FXML private Text candidate4Name; // 후보4 이름
+	@FXML private Text candidate5Name; // 후보5 이름
+	@FXML private Text candidate6Name; // 후보6 이름
+	@FXML private Text candidate7Name; // 후보7 이름
+	@FXML private Text candidate8Name; // 후보8 이름
+	@FXML private Text candidate9Name; // 후보9 이름
+	@FXML private Text candidate10Name; // 후보10 이름
+	@FXML private Text candidate11Name; // 후보11 이름
+	@FXML private Text candidate12Name; // 후보12 이름
+	@FXML private Text candidate13Name; // 후보13 이름
+	@FXML private Text candidate14Name; // 후보14 이름
+	@FXML private Text candidate15Name; // 후보15 이름
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
           candidate1.setOnMouseClicked(new EventHandler<MouseEvent>() {

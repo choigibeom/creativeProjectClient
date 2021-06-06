@@ -20,27 +20,27 @@ public class localChartViewController implements Initializable {
 	@FXML private ImageView liveVoteInfoBtn;
 	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private PieChart pieChart;
-	@FXML private SplitMenuButton electionList; // ���� ���
-	@FXML private TableView<ElectionResultDataModel2> electionResult; // ���� ���
-	@FXML private TableColumn<ElectionResultDataModel2, String> partyCol; // ����
-	@FXML private TableColumn<ElectionResultDataModel2, String> amountCol; // ����
-	@FXML private TableColumn<ElectionResultDataModel2, String> rateCol; // ����
-	@FXML private Text party1; // ���� 1
-	@FXML private Text party2; // ���� 2
-	@FXML private Text party3; // ���� 3
-	@FXML private Text party4; // ���� 4
-	@FXML private Text party5; // ���� 5
+	@FXML private SplitMenuButton electionList; // 선거 목록
+	@FXML private TableView<ElectionResultDataModel2> electionResult; // 선거 결과
+	@FXML private TableColumn<ElectionResultDataModel2, String> partyCol; // 정당
+	@FXML private TableColumn<ElectionResultDataModel2, String> amountCol; // 총합
+	@FXML private TableColumn<ElectionResultDataModel2, String> rateCol; // 비율
+	@FXML private Text party1; // 정당 1
+	@FXML private Text party2; // 정당 2
+	@FXML private Text party3; // 정당 3
+	@FXML private Text party4; // 정당 4
+	@FXML private Text party5; // 정당 5
 	
     ObservableList<ElectionResultDataModel2>myList = FXCollections.observableArrayList(
-    		new ElectionResultDataModel2(new SimpleStringProperty("���Ҿ���ִ�"), new SimpleStringProperty("652��"), new SimpleStringProperty("79.1%"))
+    		new ElectionResultDataModel2(new SimpleStringProperty("더불어민주당"), new SimpleStringProperty("652석"), new SimpleStringProperty("79.1%"))
     		);
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
     	pieChart.setData(FXCollections.observableArrayList(
-    		    new PieChart.Data("������ ��", 20),
-    		    new PieChart.Data("���Ҿ���ִ�", 32),
-    		    new PieChart.Data("���Ǵ�", 24),
-    		    new PieChart.Data("�����Ǵ�", 7)
+    		    new PieChart.Data("국민의 힘", 20),
+    		    new PieChart.Data("더불어민주당", 32),
+    		    new PieChart.Data("정의당", 24),
+    		    new PieChart.Data("국민의당", 7)
     		));
     	partyCol.setCellValueFactory(cellData->cellData.getValue().partyProperty());
     	amountCol.setCellValueFactory(cellData->cellData.getValue().amountProperty());

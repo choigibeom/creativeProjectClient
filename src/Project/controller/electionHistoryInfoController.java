@@ -61,7 +61,7 @@ public class electionHistoryInfoController implements Initializable {
         		public void run() {
     	    		Stage primaryStage = (Stage) liveVoteInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
-        			Platform.runLater(()->{primaryStage.setTitle("�ǽð� ����ǥ ��Ȳ");});
+        			Platform.runLater(()->{primaryStage.setTitle("실시간 투개표 현황");});
         		}
         	};
         	thread.setDaemon(true);
@@ -80,7 +80,7 @@ public class electionHistoryInfoController implements Initializable {
         		public void run() {
     	    		Stage primaryStage = (Stage) candidateAndElectionInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
-        			Platform.runLater(()->{primaryStage.setTitle("�ĺ��� �� ���� ����");});
+        			Platform.runLater(()->{primaryStage.setTitle("후보자 및 선거 정보");});
         		}
         	};
         	thread.setDaemon(true);
@@ -99,7 +99,7 @@ public class electionHistoryInfoController implements Initializable {
         		public void run() {
     	    		Stage primaryStage = (Stage) presidentElectionHistoryInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
-        			Platform.runLater(()->{primaryStage.setTitle("���� �缱 ����");});
+        			Platform.runLater(()->{primaryStage.setTitle("역대 당선 추이");});
         		}
         	};
         	thread.setDaemon(true);
