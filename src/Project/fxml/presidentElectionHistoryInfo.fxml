@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?improt javafx.scene.layout.ScrollPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.presidentElectionHistoryInfoController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.presidentElectionHistoryInfoController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="bbbbbb" height="1169.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="512.0" />
       <ImageView fitHeight="359.0" fitWidth="512.0" layoutY="60.0">

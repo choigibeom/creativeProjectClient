@@ -1,4 +1,4 @@
-package Project.controller;
+package client.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -39,7 +39,6 @@ public class electionInfoController implements Initializable {
     {
     	try
     	{
-
     	Parent main = FXMLLoader.load(getClass().getResource("../fxml/liveVoteInfo.fxml"));
     	Scene scene = new Scene(main,512,540);
         	Thread thread = new Thread() {
