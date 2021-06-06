@@ -2,7 +2,6 @@ package Project.Persistance;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class BasicDAOImpl implements BasicDAO {
     static final String DRIVER = "com.mysql.jdbc.Driver";

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="localChartView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="934.0" prefWidth="512.0" stylesheets="@../font/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.localChartViewController">
+<AnchorPane fx:id="localChartView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="934.0" prefWidth="512.0" stylesheets="@../font/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.localChartViewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="c8c8c8" height="945.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="512.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="409.0" layoutX="33.0" layoutY="503.0" stroke="BLACK" strokeType="INSIDE" width="445.0" />

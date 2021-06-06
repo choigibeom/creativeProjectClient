@@ -1,4 +1,4 @@
-package client.controller;
+package Project.controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
