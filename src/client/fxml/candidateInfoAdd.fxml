@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.candidateInfoAddController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8c8c8" height="450.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="514.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" layoutX="18.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="476.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="336.0" layoutX="18.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="186.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="126.0" layoutX="18.0" layoutY="289.0" stroke="BLACK" strokeType="INSIDE" width="186.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="336.0" layoutX="200.0" layoutY="79.0" stroke="BLACK" strokeType="INSIDE" width="294.0" />
+        <Text layoutX="206.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="후보자 정보">
+           <font>
+              <Font name="BM HANNA 11yrs old" size="22.0" />
+           </font>
+        </Text>
+        <Text layoutX="241.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="이름">
+           <font>
+              <Font name="NanumSquare" size="14.0" />
+           </font>
+        </Text>
+        <Text layoutX="241.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호">
+           <font>
+              <Font name="NanumSquare" size="14.0" />
+           </font>
+        </Text>
+        <Text layoutX="235.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="정당명">
+           <font>
+              <Font name="NanumSquare" size="14.0" />
+           </font>
+        </Text>
+        <Text layoutX="212.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="생년월일(나이)">
+           <font>
+              <Font name="NanumSquare" size="14.0" />
+           </font>
+        </Text>
+        <Text layoutX="241.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="경력">
+           <font>
+              <Font name="NanumSquare" size="14.0" />
+           </font>
+        </Text>
+        <Text layoutX="241.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="공약">
+           <font>
+              <Font name="NanumSquare" size="14.0" />
+           </font>
+        </Text>
+        <TextField fx:id="name" alignment="CENTER" layoutX="305.0" layoutY="102.0" prefHeight="22.0" prefWidth="161.0" />
+        <TextField fx:id="number" alignment="CENTER" layoutX="305.0" layoutY="131.0" prefHeight="22.0" prefWidth="161.0" />
+        <TextField fx:id="partyName" alignment="CENTER" layoutX="305.0" layoutY="161.0" prefHeight="22.0" prefWidth="161.0" />
+        <TextField fx:id="birth" alignment="CENTER" layoutX="305.0" layoutY="193.0" prefHeight="22.0" prefWidth="161.0" />
+        <ImageView fx:id="candidateImage" fitHeight="105.0" fitWidth="105.0" layoutX="57.0" layoutY="105.0">
+            <image>
+                <Image url="@../img/문재인_사진.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="candidatePartyImage" fitHeight="53.0" fitWidth="105.0" layoutX="57.0" layoutY="223.0">
+            <image>
+                <Image url="@../img/더불어_민주당.jpg" />
+            </image>
+        </ImageView>
+        <TextArea fx:id="career" layoutX="305.0" layoutY="316.0" prefHeight="77.0" prefWidth="161.0" />
+        <TextArea fx:id="pledge" layoutX="305.0" layoutY="226.0" prefHeight="77.0" prefWidth="161.0" />
+        <ImageView fx:id="candidateListBtn" fitHeight="60.0" fitWidth="74.0" layoutX="69.0" layoutY="310.0">
+            <image>
+                <Image url="@../img/home_(1).png" />
+            </image>
+        </ImageView>
+        <Text layoutX="67.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="후보 목록으로">
+           <font>
+              <Font name="NanumSquare" size="14.0" />
+           </font>
+        </Text>
+    </children>
+</AnchorPane>

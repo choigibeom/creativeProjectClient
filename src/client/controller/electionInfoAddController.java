@@ -19,6 +19,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class electionInfoAddController implements Initializable {
@@ -26,6 +27,12 @@ public class electionInfoAddController implements Initializable {
 	@FXML private ImageView election2;
 	@FXML private ImageView election3;
 	@FXML private AnchorPane electionInfo;
+	@FXML private Text election1VoteDay; // 첫번째 선거일
+	@FXML private Text election2VoteDay; // 두번째 선거일
+	@FXML private Text election3VoteDay; // 세번째 선거일
+	@FXML private ImageView election1Mark; // 첫번째 선거구분 마크
+	@FXML private ImageView election2Mark; // 두번째 선거구분 마크
+	@FXML private ImageView election3Mark; // 세번째 선거구분 마크
 
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {

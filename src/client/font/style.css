@@ -1,4 +1,8 @@
 .text {
 	-fx-font-size: 10pt;
 	-fx-font-family: "NanumSquare";
+	-fx-font-smoothing-type: gray;
+}
+.table-view .table-cell{
+	-fx-alignment: CENTER;
 }

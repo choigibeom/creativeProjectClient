@@ -8,182 +8,182 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="870.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.candidateListAddController">
-   <children>
-      <ImageView fx:id="election1" fitHeight="60.0" fitWidth="450.0" layoutX="31.0" layoutY="28.0">
-         <image>
-            <Image url="@../img/선거_정보2.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate1" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="127.0">
-         <image>
-            <Image url="@../img/이재명_사진.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate2" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="127.0">
-         <image>
-            <Image url="@../img/안철수_사진.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate3" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="127.0">
-         <image>
-            <Image url="@../img/오세훈_사진.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate4" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="273.0">
-         <image>
-            <Image url="@../img/문재인_사진.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate5" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="273.0">
-         <image>
-            <Image url="@../img/홍준표_사진.jpg" />
-         </image>
-      </ImageView>
-      <Text fx:id="candidate1Name" layoutX="35.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 1번 이제명" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate2Name" layoutX="199.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호2번 안철수" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate3Name" layoutX="384.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호3번 오세훈" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate4Name" layoutX="35.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호4번 홍준표" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate5Name" layoutX="199.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호5번 문재인" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <ImageView fx:id="election1Mark" disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="55.0" layoutY="39.0">
-         <image>
-            <Image url="@../img/청와대마크.png" />
-         </image>
-      </ImageView>
-      <Text fx:id="election1VoteDay" disable="true" fill="WHITE" layoutX="374.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021.1.9" textAlignment="CENTER" wrappingWidth="85.0">
-         <font>
-            <Font name="NanumSquare" size="14.0" />
-         </font>
-      </Text>
-      <Text disable="true" fill="WHITE" layoutX="309.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="선거일" textAlignment="CENTER" wrappingWidth="85.0">
-         <font>
-            <Font name="NanumSquare" size="14.0" />
-         </font>
-      </Text>
-      <Text fx:id="election1Title" disable="true" fill="WHITE" layoutX="105.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제 1대 대통령 선거" wrappingWidth="234.181640625">
-         <font>
-            <Font name="NanumSquare" size="18.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate6Name" layoutX="387.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <ImageView fx:id="candidate6" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="273.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate7" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="570.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <Text fx:id="candidate7Name" layoutX="387.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate8Name" layoutX="199.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate9Name" layoutX="35.0" layoutY="684.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate10Name" layoutX="384.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate11Name" layoutX="199.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate12Name" layoutX="35.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <ImageView fx:id="candidate8" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="570.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate9" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="570.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate10" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="424.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate11" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="424.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate12" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="424.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate13" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="721.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="candidate14" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="721.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
-      <Text fx:id="candidate13Name" layoutX="35.0" layoutY="835.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate14Name" layoutX="199.0" layoutY="836.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <Text fx:id="candidate15Name" layoutX="387.0" layoutY="836.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
-         <font>
-            <Font name="NanumSquare" size="12.0" />
-         </font>
-      </Text>
-      <ImageView fx:id="candidate15" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="721.0">
-         <image>
-            <Image url="@../img/기본이미지.jpg" />
-         </image>
-      </ImageView>
+<AnchorPane fx:id = "candidateList" prefHeight="870.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.candidateListAddController">
+    <children>
+            <ImageView fx:id="election1" fitHeight="60.0" fitWidth="450.0" layoutX="31.0" layoutY="28.0">
+               <image>
+                  <Image url="@../img/선거_정보2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate1" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="127.0">
+               <image>
+                  <Image url="@../img/이재명_사진.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate2" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="127.0">
+               <image>
+                  <Image url="@../img/안철수_사진.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate3" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="127.0">
+               <image>
+                  <Image url="@../img/오세훈_사진.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate4" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="273.0">
+               <image>
+                  <Image url="@../img/문재인_사진.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate5" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="273.0">
+               <image>
+                  <Image url="@../img/홍준표_사진.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="candidate1Name" layoutX="35.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 1번 이제명" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate2Name" layoutX="199.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호2번 안철수" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate3Name" layoutX="384.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호3번 오세훈" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate4Name" layoutX="35.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호4번 홍준표" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate5Name" layoutX="199.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호5번 문재인" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="election1Mark" disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="55.0" layoutY="39.0">
+               <image>
+                  <Image url="@../img/청와대마크.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="election1VoteDay" disable="true" fill="WHITE" layoutX="374.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021.1.9" textAlignment="CENTER" wrappingWidth="85.0">
+               <font>
+                  <Font name="NanumSquare" size="14.0" />
+               </font>
+            </Text>
+            <Text disable="true" fill="WHITE" layoutX="309.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="선거일" textAlignment="CENTER" wrappingWidth="85.0">
+               <font>
+                  <Font name="NanumSquare" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="election1Title" disable="true" fill="WHITE" layoutX="105.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제 1대 대통령 선거" wrappingWidth="234.181640625">
+               <font>
+                  <Font name="NanumSquare" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate6Name" layoutX="387.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="candidate6" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="273.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate7" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="570.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="candidate7Name" layoutX="387.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate8Name" layoutX="199.0" layoutY="685.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate9Name" layoutX="35.0" layoutY="684.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate10Name" layoutX="384.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate11Name" layoutX="199.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate12Name" layoutX="35.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="candidate8" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="570.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate9" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="570.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate10" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="424.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate11" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="424.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate12" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="424.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate13" fitHeight="103.0" fitWidth="96.0" layoutX="199.0" layoutY="721.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="candidate14" fitHeight="103.0" fitWidth="96.0" layoutX="35.0" layoutY="721.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="candidate13Name" layoutX="35.0" layoutY="835.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate14Name" layoutX="199.0" layoutY="836.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="candidate15Name" layoutX="387.0" layoutY="836.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="96.0">
+               <font>
+                  <Font name="NanumSquare" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="candidate15" fitHeight="103.0" fitWidth="96.0" layoutX="384.0" layoutY="721.0">
+               <image>
+                  <Image url="@../img/기본이미지.jpg" />
+               </image>
+            </ImageView>
    </children>
 </AnchorPane>
