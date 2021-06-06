@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="nationalAssemblyChartView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1169.0" prefWidth="512.0" stylesheets="@../font/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.nationalAssemblyChartViewController">
+<AnchorPane fx:id="nationalAssemblyChartView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1169.0" prefWidth="512.0" stylesheets="@../font/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.nationalAssemblyChartViewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="c8c8c8" height="1169.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="512.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="639.0" layoutX="33.0" layoutY="503.0" stroke="BLACK" strokeType="INSIDE" width="445.0" />

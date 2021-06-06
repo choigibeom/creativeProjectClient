@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="localChartView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="934.0" prefWidth="512.0" stylesheets="@../font/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.localChartViewController">
+<AnchorPane fx:id="localChartView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="934.0" prefWidth="512.0" stylesheets="@../font/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.localChartViewController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="c8c8c8" height="945.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="512.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="409.0" layoutX="33.0" layoutY="503.0" stroke="BLACK" strokeType="INSIDE" width="445.0" />
@@ -139,7 +139,7 @@
       <Circle fill="#7c00ff" layoutX="394.0" layoutY="476.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
       <Circle fill="#707070" layoutX="394.0" layoutY="496.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
       <Circle fill="#ff0f00" layoutX="394.0" layoutY="416.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
-      <Text  fx:id = "party1" layoutX="399.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="더불어민주당" textAlignment="CENTER" wrappingWidth="70.0">
+      <Text  fx:id = "party1" layoutX="399.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="70.0">
          <font>
             <Font name="NanumSquare" size="11.0" />
          </font>

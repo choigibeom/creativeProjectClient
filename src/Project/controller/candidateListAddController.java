@@ -1,7 +1,5 @@
-package Project.controller;
+package client.controller;
 
-import java.io.PrintWriter;
-import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -12,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
@@ -87,20 +86,11 @@ public class candidateListAddController implements Initializable {
         });
     }
     public void changeCandidateInfo()
-	{
+    {
     	try
     	{
-			Socket clSocket = new Socket("localhost", 9594);
-			PrintWriter pw = new PrintWriter(clSocket.getOutputStream(), true);
-			//BufferedReader br = new BufferedReader(new InputStreamReader(clSocket.getInputStream()));
-
-			pw.write("3");
-			pw.flush();
-			pw.close();
-			clSocket.close();
-
-    		Parent main = FXMLLoader.load(getClass().getResource("../fxml/candidateInfo.fxml"));
-    		Scene scene = new Scene(main,512,540);
+    	Parent main = FXMLLoader.load(getClass().getResource("../fxml/candidateInfo.fxml"));
+    	Scene scene = new Scene(main,512,540);
         	Thread thread = new Thread() {
         		public void run() {
     	    		Stage primaryStage = (Stage) candidate1.getScene().getWindow();
@@ -111,5 +101,362 @@ public class candidateListAddController implements Initializable {
         	thread.start();
     	}
     	catch(Exception e) { System.out.println("error");}
+    }
+
+    public void setElection1Title(String title_in)
+    {
+    	election1Title.setText(title_in);
+    }
+    
+    public void setElection1VoteDay(String voteDay_in)
+    {
+    	election1VoteDay.setText(voteDay_in);
+    }
+
+    public void setElection1Mark(String election_category)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	election1Mark.setImage(new Image(getClass().getResourceAsStream("../img/"+ election_category +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		election1Mark.setImage(new Image(getClass().getResourceAsStream("../img/흰색_마크.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate1(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate1.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate1.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate2(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate2.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate2.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate3(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate3.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate3.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate4(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate4.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate4.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate5(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate5.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate5.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate6(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate6.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate6.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate7(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate7.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate7.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate8(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate8.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate8.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate9(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate9.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate9.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate10(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate10.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate10.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate11(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate11.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate11.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate12(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate12.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate12.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate13(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate13.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate13.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate14(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate14.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate14.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate15(String candidate_name)
+    {
+    	try
+    	{
+        	Thread thread = new Thread() {
+        		public void run() {
+        	    	candidate15.setImage(new Image(getClass().getResourceAsStream("../img/"+ candidate_name +"_사진.png")));
+        		}
+        	};
+        	thread.setDaemon(true);
+        	thread.start();
+    	}
+    	catch(Exception e) {
+    		candidate15.setImage(new Image(getClass().getResourceAsStream("../img/기본이미지.png")));
+    		System.out.println("error");}
+    }
+    
+    public void setCandidate1Name(String candidate_number_name)
+    {
+    	candidate1Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate2Name(String candidate_number_name)
+    {
+    	candidate2Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate3Name(String candidate_number_name)
+    {
+    	candidate3Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate4Name(String candidate_number_name)
+    {
+    	candidate4Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate5Name(String candidate_number_name)
+    {
+    	candidate5Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate6Name(String candidate_number_name)
+    {
+    	candidate6Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate7Name(String candidate_number_name)
+    {
+    	candidate7Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate8Name(String candidate_number_name)
+    {
+    	candidate8Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate9Name(String candidate_number_name)
+    {
+    	candidate9Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate10Name(String candidate_number_name)
+    {
+    	candidate10Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate11Name(String candidate_number_name)
+    {
+    	candidate11Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate12Name(String candidate_number_name)
+    {
+    	candidate12Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate13Name(String candidate_number_name)
+    {
+    	candidate13Name.setText(candidate_number_name);
+    }
+    
+    public void setCandidate14Name(String candidate_number_name)
+    {
+    	candidate14Name.setText(candidate_number_name);
+    }
+
+    public void setCandidate15Name(String candidate_number_name)
+    {
+    	candidate15Name.setText(candidate_number_name);
     }
 }

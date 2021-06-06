@@ -20,7 +20,7 @@
       </ImageView>
       <AnchorPane prefHeight="540.0" prefWidth="512.0" stylesheets="@../font/style.css">
          <children>
-            <Label id="Project" layoutX="160.0" layoutY="344.0" text="Copyright 2021. All rights reserved">
+            <Label id="client" layoutX="160.0" layoutY="344.0" text="Copyright 2021. All rights reserved">
                <font>
                   <Font name="HYGungSo-Bold" size="12.0" />
                </font>

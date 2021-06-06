@@ -13,7 +13,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="512.0" stylesheets="@../font/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.liveVoteInfoAddController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="512.0" stylesheets="@../font/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.liveVoteInfoAddController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="c8c8c8" height="55.0" stroke="BLACK" strokeType="INSIDE" width="512.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="350.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="512.0" />
@@ -29,7 +29,7 @@
             <Font name="NanumSquare" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="voteBallotRate" layoutX="224.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="34.66%" textAlignment="CENTER" wrappingWidth="68.0">
+      <Text fx:id="voteBallotRate" layoutX="224.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NaN%" textAlignment="CENTER" wrappingWidth="68.0">
          <font>
             <Font name="BM HANNA 11yrs old" size="14.0" />
          </font></Text>
@@ -40,12 +40,12 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="107.0" layoutX="47.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="117.0" />
       <ImageView fx:id="regionImage" layoutX="56.0" layoutY="104.0">
          <image>
-            <Image url="@../img/catogram/파랑/서울-파랑-1.png" />
+            <Image url="@../img/흰색_빈공간.png" />
          </image>
       </ImageView>
       <Line endX="30.0" layoutX="122.0" layoutY="192.0" rotate="60.0" startX="-30.0" />
       <Line endX="10.0" layoutX="148.0" layoutY="218.0" startX="-10.0" />
-      <Text fx:id="region" layoutX="162.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="서울">
+      <Text fx:id="region" layoutX="162.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE">
          <font>
             <Font name="BM HANNA 11yrs old" size="16.0" />
          </font>
@@ -55,12 +55,12 @@
       <Rectangle fx:id="secondCandidateVoteGraph" arcHeight="5.0" arcWidth="5.0" fill="#3f72e8" height="20.0" layoutX="301.0" layoutY="353.0" stroke="BLACK" strokeType="INSIDE" width="190.0" />
       <ImageView fitHeight="85.0" fitWidth="80.0" layoutX="22.0" layoutY="228.0">
          <image>
-            <Image url="@../img/홍준표_사진.jpg" />
+            <Image url="@../img/기본이미지.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="85.0" fitWidth="80.0" layoutX="411.0" layoutY="228.0">
          <image>
-            <Image url="@../img/문재인_사진.jpg" />
+            <Image url="@../img/기본이미지.jpg" />
          </image>
       </ImageView>
       <Text layoutX="326.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="투표율">
@@ -96,57 +96,57 @@
             <Font name="NanumSquare" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="electionTitle" fill="#0777ff" layoutX="160.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="서울 시도지사 선거" textAlignment="CENTER" wrappingWidth="200.0">
+      <Text fx:id="electionTitle" fill="#0777ff" layoutX="160.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="200.0">
          <font>
             <Font name="BM HANNA 11yrs old" size="22.0" />
          </font>
       </Text>
-      <Text fx:id="firstCandidateVoteRate" fill="#ff1f1f" layoutX="22.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="56.02%" wrappingWidth="80.0">
+      <Text fx:id="firstCandidateVoteRate" fill="#ff1f1f" layoutX="22.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NaN%" wrappingWidth="80.0">
          <font>
             <Font name="BM HANNA 11yrs old" size="22.0" />
          </font>
       </Text>
-      <Text fx:id="secondCandidateVoteRate" fill="#3f72e8" layoutX="411.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40.99%" textAlignment="RIGHT" wrappingWidth="80.0">
+      <Text fx:id="secondCandidateVoteRate" fill="#3f72e8" layoutX="411.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NaN%" textAlignment="RIGHT" wrappingWidth="80.0">
          <font>
             <Font name="BM HANNA 11yrs old" size="22.0" />
          </font>
       </Text>
-      <Text fx:id="secondCandidateVote" fill="#3f72e8" layoutX="360.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="692,380표" textAlignment="RIGHT" wrappingWidth="130.0">
+      <Text fx:id="secondCandidateVote" fill="#3f72e8" layoutX="360.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NaN표" textAlignment="RIGHT" wrappingWidth="130.0">
          <font>
             <Font name="NanumSquare" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="firstCandidateVote" fill="#ff1f1f" layoutX="22.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="946,207표" wrappingWidth="130.0">
+      <Text fx:id="firstCandidateVote" fill="#ff1f1f" layoutX="22.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NaN표" wrappingWidth="130.0">
          <font>
             <Font name="NanumSquare" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="firstCandidateName" fill="#0777ff" layoutX="110.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="홍준표" wrappingWidth="80.0">
+      <Text fx:id="firstCandidateName" fill="#0777ff" layoutX="110.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" wrappingWidth="80.0">
          <font>
             <Font name="BM HANNA 11yrs old" size="22.0" />
          </font>
       </Text>
-      <Text fx:id="secondCandidateName" fill="#0777ff" layoutX="325.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="문재인" textAlignment="RIGHT" wrappingWidth="80.0">
+      <Text fx:id="secondCandidateName" fill="#0777ff" layoutX="325.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="RIGHT" wrappingWidth="80.0">
          <font>
             <Font name="BM HANNA 11yrs old" size="22.0" />
          </font>
       </Text>
-      <Text fx:id="firstCandidateNumber" layoutX="112.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 1" wrappingWidth="80.0">
+      <Text fx:id="firstCandidateNumber" layoutX="112.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 NaN" wrappingWidth="80.0">
          <font>
             <Font name="BM HANNA 11yrs old" size="16.0" />
          </font>
       </Text>
-      <Text fx:id="secondCandidateNumber" layoutX="322.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 2" textAlignment="RIGHT" wrappingWidth="80.0">
+      <Text fx:id="secondCandidateNumber" layoutX="322.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호 NaN" textAlignment="RIGHT" wrappingWidth="80.0">
          <font>
             <Font name="BM HANNA 11yrs old" size="16.0" />
          </font>
       </Text>
-      <Text fx:id="firstCandidateParty" layoutX="112.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="국민의 힘" wrappingWidth="80.0"> 
+      <Text fx:id="firstCandidateParty" layoutX="112.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" wrappingWidth="80.0"> 
          <font>
             <Font name="NanumSquare" size="14.0" />
          </font>
       </Text>
-      <Text fx:id="secondCandidateParty" layoutX="322.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="더불어민주당" textAlignment="RIGHT" wrappingWidth="80.0">
+      <Text fx:id="secondCandidateParty" layoutX="322.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="RIGHT" wrappingWidth="80.0">
          <font>
             <Font name="NanumSquare" size="14.0" />
          </font>

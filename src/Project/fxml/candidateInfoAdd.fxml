@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="450.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.candidateInfoAddController">
+<AnchorPane prefHeight="450.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.candidateInfoAddController">
     <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8c8c8" height="450.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="514.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" layoutX="18.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="476.0" />
@@ -57,12 +57,12 @@
         <TextField fx:id="birth" alignment="CENTER" layoutX="305.0" layoutY="193.0" prefHeight="22.0" prefWidth="161.0" />
         <ImageView fx:id="candidateImage" fitHeight="105.0" fitWidth="105.0" layoutX="57.0" layoutY="105.0">
             <image>
-                <Image url="@../img/문재인_사진.jpg" />
+                <Image url="@../img/기본이미지.jpg" />
             </image>
         </ImageView>
         <ImageView fx:id="candidatePartyImage" fitHeight="53.0" fitWidth="105.0" layoutX="57.0" layoutY="223.0">
             <image>
-                <Image url="@../img/더불어_민주당.jpg" />
+                <Image url="@../img/흰색_빈공간 .jpg" />
             </image>
         </ImageView>
         <TextArea fx:id="career" layoutX="305.0" layoutY="316.0" prefHeight="77.0" prefWidth="161.0" />
