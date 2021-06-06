@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/Project/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/candidateInfoAddController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/candidateInfoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/candidateList2AddController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/candidateListAddController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/electionHistoryInfoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/electionInfoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/liveVoteInfoAddController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/liveVoteInfoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/localChartViewController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/localElectionHistoryInfoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/mainViewController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/nationalAssemblyChartViewController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/nationalAssemblyElectionHistoryInfoController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/presidentChartViewController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Project/controller/presidentElectionHistoryInfoController.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

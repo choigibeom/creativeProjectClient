@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="electionInfo" prefHeight="370.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.electionInfoAddController">
+   <children>
+      <ImageView fx:id="election2" fitHeight="60.0" fitWidth="450.0" layoutX="31.0" layoutY="172.0">
+         <image>
+            <Image url="@../img/선거_정보1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="election1" fitHeight="60.0" fitWidth="450.0" layoutX="31.0" layoutY="86.0">
+         <image>
+            <Image url="@../img/선거_정보2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="election3" fitHeight="60.0" fitWidth="450.0" layoutX="31.0" layoutY="258.0">
+         <image>
+            <Image url="@../img/선거_정보3.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="219.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="선거 목록">
+         <font>
+            <Font name="NanumSquare" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="election1Title" disable="true" fill="WHITE" layoutX="105.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제 1대 대통령 선거" wrappingWidth="234.181640625">
+         <font>
+            <Font name="NanumSquare" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="election2Title" disable="true" fill="WHITE" layoutX="105.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제 2대 국회의원 선거" wrappingWidth="234.181640625">
+      <font>
+            <Font name="NanumSquare" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="election3Title" disable="true" fill="WHITE" layoutX="105.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="제 3대 서울시장 선거" wrappingWidth="234.181640625">
+         <font>
+            <Font name="NanumSquare" size="18.0" />
+         </font>
+      </Text>
+      <Text disable="true" fill="WHITE" layoutX="308.5" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="선거일" textAlignment="CENTER" wrappingWidth="85.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="election1VoteDay" disable="true" fill="WHITE" layoutX="374.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021.1.9" textAlignment="CENTER" wrappingWidth="85.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>    
+      <Text disable="true" fill="WHITE" layoutX="308.5" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="선거일" textAlignment="CENTER" wrappingWidth="85.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="election2VoteDay" disable="true" fill="WHITE" layoutX="374.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021.5.14" textAlignment="CENTER" wrappingWidth="85.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text disable="true" fill="WHITE" layoutX="308.5" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="선거일" textAlignment="CENTER" wrappingWidth="85.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="election3VoteDay" disable="true" fill="WHITE" layoutX="374.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2021.6.14" textAlignment="CENTER" wrappingWidth="85.0">
+         <font>
+            <Font name="NanumSquare" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="election1Mark" disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="55.0" layoutY="97.0">
+         <image>
+            <Image url="@../img/청와대마크.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="election2Mark" disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="55.0" layoutY="182.0">
+         <image>
+            <Image url="@../img/국회의원마크.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="election3Mark" disable="true" fitHeight="40.0" fitWidth="40.0" layoutX="55.0" layoutY="269.0">
+         <image>
+            <Image url="@../img/광역자치단체마크.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

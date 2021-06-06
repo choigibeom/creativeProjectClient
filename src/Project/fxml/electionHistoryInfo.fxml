@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.controller.electionHistoryInfoController">
+   <children>
+      <ImageView fitHeight="359.0" fitWidth="512.0" layoutY="60.0">
+         <image>
+            <Image url="@../img/흰색_빈공간.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="512.0">
+         <image>
+            <Image url="@../img/메인상단.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/실시간_투개표_현황.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/역대_당선_추이.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="candidateAndElectionInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/후보자_및_선거_정보.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="68.0" layoutX="130.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/빈공간.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="61.0" layoutX="322.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/빈공간.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id = "presidentElectionHistoryInfoBtn" fitHeight="103.0" fitWidth="120.0" layoutX="43.0" layoutY="204.0">
+         <image>
+            <Image url="@../img/대통령별_당선_추이.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id = "nationalAssemblyElectionHistoryInfoBtn" fitHeight="103.0" fitWidth="120.0" layoutX="196.0" layoutY="204.0">
+         <image>
+            <Image url="@../img/국회의원_임기별_당선_추이.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id = "localElectionHistoryInfoBtn" fitHeight="103.0" fitWidth="120.0" layoutX="351.0" layoutY="210.0">
+         <image>
+            <Image url="@../img/광역시별_당선_추이.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="197.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="역대 당선 추이" >
+         <font>
+            <Font name="NanumSquare" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
