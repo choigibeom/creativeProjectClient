@@ -1,4 +1,4 @@
-package client.controller;
+package Project.controller;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
