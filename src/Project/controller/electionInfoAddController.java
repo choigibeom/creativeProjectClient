@@ -1,8 +1,14 @@
 package Project.controller;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import Project.Persistance.ElectionDTO;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,6 +25,9 @@ public class electionInfoAddController implements Initializable {
 	@FXML private ImageView election2;
 	@FXML private ImageView election3;
 	@FXML private AnchorPane electionInfo;
+	@FXML private Text election1Title;
+	@FXML private Text election2Title;
+	@FXML private Text election3Title;
 	@FXML private Text election1VoteDay; // 첫번째 선거일
 	@FXML private Text election2VoteDay; // 두번째 선거일
 	@FXML private Text election3VoteDay; // 세번째 선거일
@@ -26,8 +35,31 @@ public class electionInfoAddController implements Initializable {
 	@FXML private ImageView election2Mark; // 두번째 선거구분 마크
 	@FXML private ImageView election3Mark; // 세번째 선거구분 마크
 
+	private Socket socket;
+	private ObjectOutputStream oos;
+	private ObjectInputStream ois;
+
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
+    	try{
+
+			socket = new Socket("localhost", 9594);
+			oos = new ObjectOutputStream(socket.getOutputStream());
+			oos.writeObject("5");
+			oos.flush();
+
+			ois = new ObjectInputStream(socket.getInputStream());
+
+			ArrayList<ElectionDTO> dto = (ArrayList<ElectionDTO>) ois.readObject();
+			election1Title.setText(dto.get(23).getSgName());
+			election1VoteDay.setText(dto.get(23).getSgVotedate().toString());
+			election2Title.setText(dto.get(24).getSgName());
+			election2VoteDay.setText(dto.get(24).getSgVotedate().toString());
+			election3Title.setText(dto.get(25).getSgName());
+			election3VoteDay.setText(dto.get(25).getSgVotedate().toString());
+		}catch(Exception e) {
+    		e.printStackTrace();
+		}
           election1.setOnMouseClicked(new EventHandler<MouseEvent>() {
       	     public void handle(MouseEvent event) {
       	    	 changeElection1();
@@ -79,7 +111,19 @@ public class electionInfoAddController implements Initializable {
     	}
     	catch(Exception e) { System.out.println("error");}
     }
-    
+	public void setElection1Titie(String title_in)
+	{
+		election1Title.setText(title_in);
+	}
+	public void setElection2Titie(String title_in)
+	{
+		election2Title.setText(title_in);
+	}
+	public void setElection3Titie(String title_in)
+	{
+		election3Title.setText(title_in);
+	}
+
     public void setElection1VoteDay(String voteDay_in)
     {
     	election1VoteDay.setText(voteDay_in);

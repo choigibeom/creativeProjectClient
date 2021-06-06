@@ -7,7 +7,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import Project.Persistance.CandidateDTO;
+import Project.Persistance.ElectionDTO;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -23,10 +23,7 @@ public class mainViewController implements Initializable {
 	@FXML private ImageView liveVoteInfoBtn;
 	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private ImageView electionHistoryInfoBtn;
-	private Socket socket;
-	private ObjectOutputStream os;
-	private ObjectInputStream is;
-    @Override
+	    @Override
     public void initialize(URL location, ResourceBundle resoruces) {
           liveVoteInfoBtn.setOnMouseClicked(new EventHandler<MouseEvent>() {
               public void handle(MouseEvent event) {
@@ -68,14 +65,7 @@ public class mainViewController implements Initializable {
 
 	public void changeCandidateAndElectionInfo() {
 		try {
-			socket = new Socket("localhost", 9594);
-			os = new ObjectOutputStream(socket.getOutputStream());
-			os.writeObject("5");
-			os.flush();
 
-			is = new ObjectInputStream(socket.getInputStream());
-			ArrayList<CandidateDTO> dto = (ArrayList<CandidateDTO>) is.readObject();
-			System.out.println(dto.get(0).getName());
 			Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionInfo.fxml"));
 			Scene scene = new Scene(main, 512, 540);
 			Thread thread = new Thread() {
