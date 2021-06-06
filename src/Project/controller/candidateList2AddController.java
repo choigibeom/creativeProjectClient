@@ -17,6 +17,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class candidateList2AddController implements Initializable {
+
 	@FXML private Text election2Title; // 선거2 이름
 	@FXML private Text election2VoteDay; // 선거2 선거일
 	@FXML private ImageView election2Mark; // 선거2 선거구분 마크
@@ -51,7 +52,6 @@ public class candidateList2AddController implements Initializable {
 	@FXML private Text candidate13Name; // 후보13 이름
 	@FXML private Text candidate14Name; // 후보14 이름
 	@FXML private Text candidate15Name; // 후보15 이름
-
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
           candidate1.setOnMouseClicked(new EventHandler<MouseEvent>() {

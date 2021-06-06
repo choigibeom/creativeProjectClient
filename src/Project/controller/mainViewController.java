@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import Project.Persistance.CandidateDTO;
+
 import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -81,15 +82,28 @@ public class mainViewController implements Initializable {
 
     public void changeCandidateAndElectionInfo() {
         try {
-			socket = new Socket("localhost", 9594);
-			os = new ObjectOutputStream(socket.getOutputStream());
-			os.writeObject("5");
-			os.flush();
+//            Socket clSocket = new Socket("localhost", 9594);
+//            PrintWriter pw = new PrintWriter(clSocket.getOutputStream(), true);
+//            //BufferedReader br = new BufferedReader(new InputStreamReader(clSocket.getInputStream()));
+//
+////			pw.write("5");
+////			pw.flush();
+////			pw.close();
+//            ObjectOutputStream oos = new ObjectOutputStream(clSocket.getOutputStream());
+//
+//            oos.writeObject("5");
+//            oos.flush();
+//           // clSocket.close();
+//            ObjectInputStream ois = new ObjectInputStream(clSocket.getInputStream());
+//            ArrayList<CandidateDTO> dto = (ArrayList<CandidateDTO>) ois.readObject();
+            socket = new Socket("localhost", 9594);
+            os = new ObjectOutputStream(socket.getOutputStream());
+            os.writeObject("5");
+            os.flush();
 
-			is = new ObjectInputStream(socket.getInputStream());
-			ArrayList<CandidateDTO> dto = (ArrayList<CandidateDTO>) is.readObject();
-			System.out.println(dto.get(0).getName());
-
+            is = new ObjectInputStream(socket.getInputStream());
+            ArrayList<CandidateDTO> dto = (ArrayList<CandidateDTO>) is.readObject();
+            System.out.println(dto.get(0).getName());
             Parent main = FXMLLoader.load(getClass().getResource("../fxml/electionInfo.fxml"));
             Scene scene = new Scene(main, 512, 540);
             Thread thread = new Thread() {
