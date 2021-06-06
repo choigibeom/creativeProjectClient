@@ -45,6 +45,7 @@ public class liveVoteInfoController implements Initializable {
         		public void run() {
     	    		Stage primaryStage = (Stage) candidateAndElectionInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
+        			Platform.runLater(()->{primaryStage.setTitle("후보자 및 선거 정보");});
         		}
         	};
         	thread.setDaemon(true);
@@ -65,6 +66,7 @@ public class liveVoteInfoController implements Initializable {
         		public void run() {
     	    		Stage primaryStage = (Stage) electionHistoryInfoBtn.getScene().getWindow();
         			Platform.runLater(()->{primaryStage.setScene(scene);});
+        			Platform.runLater(()->{primaryStage.setTitle("역대 당선 추이");});
         		}
         	};
         	thread.setDaemon(true);

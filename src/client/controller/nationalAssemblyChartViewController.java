@@ -3,8 +3,11 @@ package client.controller;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import client.dataModel.ElectionResultDataModel;
 import javafx.application.Platform;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,9 +18,13 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.SplitMenuButton;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class nationalAssemblyChartViewController implements Initializable {
@@ -25,6 +32,22 @@ public class nationalAssemblyChartViewController implements Initializable {
 	@FXML private ImageView candidateAndElectionInfoBtn;
 	@FXML private PieChart pieChart;
 	@FXML private LineChart<String, Integer> lineChart;
+	@FXML private SplitMenuButton electionList; // 선거 목록
+	@FXML private TableView<ElectionResultDataModel> electionResult; // 선거 결과
+	@FXML private TableColumn<ElectionResultDataModel, String> partyCol; // 정당
+	@FXML private TableColumn<ElectionResultDataModel, String> constituencyCol; // 지역구
+	@FXML private TableColumn<ElectionResultDataModel, String> proportionalRepresentationCol; // 비례대표
+	@FXML private TableColumn<ElectionResultDataModel, String> amountCol; // 총합
+	@FXML private TableColumn<ElectionResultDataModel, String> rateCol; // 비율
+	@FXML private Text party1; // 정당 1
+	@FXML private Text party2; // 정당 2
+	@FXML private Text party3; // 정당 3
+	@FXML private Text party4; // 정당 4
+	@FXML private Text party5; // 정당 5
+    
+    ObservableList<ElectionResultDataModel>myList = FXCollections.observableArrayList(
+    		new ElectionResultDataModel(new SimpleStringProperty("더불어민주당"), new SimpleStringProperty("163석"), new SimpleStringProperty("17석"), new SimpleStringProperty("180석"), new SimpleStringProperty("60.0%"))
+    		);
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
     	 XYChart.Series<String, Integer> series1 = null;
@@ -64,6 +87,12 @@ public class nationalAssemblyChartViewController implements Initializable {
     		    new PieChart.Data("정의당", 24),
     		    new PieChart.Data("국민의당", 7)
     		));
+    	partyCol.setCellValueFactory(cellData->cellData.getValue().partyProperty());
+    	constituencyCol.setCellValueFactory(cellData->cellData.getValue().constituencyProperty());
+    	proportionalRepresentationCol.setCellValueFactory(cellData->cellData.getValue().proportionalRepresentationProperty());
+    	amountCol.setCellValueFactory(cellData->cellData.getValue().amountProperty());
+    	rateCol.setCellValueFactory(cellData->cellData.getValue().rateProperty());
+    	electionResult.setItems(myList);
     }
     
 }

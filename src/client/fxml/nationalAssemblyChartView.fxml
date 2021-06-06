@@ -42,87 +42,87 @@
             <Font name="BM HANNA 11yrs old" size="22.0" />
          </font>
       </Text>
-      <ImageView fx:id = "chungcheongbukdo" fitHeight="124.0" fitWidth="124.0" layoutX="211.0" layoutY="215.0">
+      <ImageView fx:id="chungcheongbukdo" fitHeight="124.0" fitWidth="124.0" layoutX="211.0" layoutY="215.0">
          <image>
             <Image url="@../img/catogram/회색/충청북도.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "sejong" fitHeight="40.0" fitWidth="41.0" layoutX="209.0" layoutY="259.0">
+      <ImageView fx:id="sejong" fitHeight="40.0" fitWidth="41.0" layoutX="209.0" layoutY="259.0">
          <image>
             <Image url="@../img/catogram/빨강/세종-빨강-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "daejeon" fitHeight="24.0" fitWidth="34.0" layoutX="221.0" layoutY="285.0">
+      <ImageView fx:id="daejeon" fitHeight="24.0" fitWidth="34.0" layoutX="221.0" layoutY="285.0">
          <image>
             <Image url="@../img/catogram/파랑/대전-파랑-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "jeollabukdo" fitHeight="85.0" fitWidth="93.0" layoutX="179.0" layoutY="295.0">
+      <ImageView fx:id="jeollabukdo" fitHeight="85.0" fitWidth="93.0" layoutX="179.0" layoutY="295.0">
          <image>
             <Image url="@../img/catogram/빨강/전라북도-빨강-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "gyeongsangnamdo" fitHeight="153.0" fitWidth="140.0" layoutX="229.0" layoutY="293.0">
+      <ImageView fx:id="gyeongsangnamdo" fitHeight="153.0" fitWidth="140.0" layoutX="229.0" layoutY="293.0">
          <image>
             <Image url="@../img/catogram/파랑/경상남도-파랑-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "daegu" fitHeight="45.0" fitWidth="52.0" layoutX="283.0" layoutY="308.0">
+      <ImageView fx:id="daegu" fitHeight="45.0" fitWidth="52.0" layoutX="283.0" layoutY="308.0">
          <image>
             <Image url="@../img/catogram/파랑/대구-파랑-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "ulsan" fitHeight="55.0" fitWidth="52.0" layoutX="322.0" layoutY="324.0">
+      <ImageView fx:id="ulsan" fitHeight="55.0" fitWidth="52.0" layoutX="322.0" layoutY="324.0">
          <image>
             <Image url="@../img/catogram/파랑/울산-파랑-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "busan" fitHeight="48.0" fitWidth="45.0" layoutX="315.0" layoutY="348.0">
+      <ImageView fx:id="busan" fitHeight="48.0" fitWidth="45.0" layoutX="315.0" layoutY="348.0">
          <image>
             <Image url="@../img/catogram/파랑/부산-파랑-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "gwangju" fitHeight="20.0" fitWidth="23.0" layoutX="195.0" layoutY="367.0">
+      <ImageView fx:id="gwangju" fitHeight="20.0" fitWidth="23.0" layoutX="195.0" layoutY="367.0">
          <image>
             <Image url="@../img/catogram/빨강/광주-빨강-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "jejudo" fitHeight="58.0" fitWidth="61.0" layoutX="170.0" layoutY="463.0">
+      <ImageView fx:id="jejudo" fitHeight="58.0" fitWidth="61.0" layoutX="170.0" layoutY="463.0">
          <image>
             <Image url="@../img/catogram/보라/제주도-보라-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "gyeonggido" fitHeight="133.0" fitWidth="124.0" layoutX="150.0" layoutY="137.0">
+      <ImageView fx:id="gyeonggido" fitHeight="133.0" fitWidth="124.0" layoutX="150.0" layoutY="137.0">
          <image>
             <Image url="@../img/catogram/보라/경기도-보라-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "gangwondo" fitHeight="163.0" fitWidth="148.0" layoutX="215.0" layoutY="103.0">
+      <ImageView fx:id="gangwondo" fitHeight="163.0" fitWidth="148.0" layoutX="215.0" layoutY="103.0">
          <image>
             <Image url="@../img/catogram/초록/강원도-초록-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "incheon" fitHeight="64.0" fitWidth="58.0" layoutX="144.0" layoutY="161.0">
+      <ImageView fx:id="incheon" fitHeight="64.0" fitWidth="58.0" layoutX="144.0" layoutY="161.0">
          <image>
             <Image url="@../img/catogram/초록/인천-초록-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "seoul" fitHeight="58.0" fitWidth="50.0" layoutX="190.0" layoutY="176.0">
+      <ImageView fx:id="seoul" fitHeight="58.0" fitWidth="50.0" layoutX="190.0" layoutY="176.0">
          <image>
             <Image url="@../img/catogram/빨강/서울-빨강-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "jeollanamdo" fitHeight="201.0" fitWidth="198.0" layoutX="91.0" layoutY="302.0">
+      <ImageView fx:id="jeollanamdo" fitHeight="201.0" fitWidth="198.0" layoutX="91.0" layoutY="302.0">
          <image>
             <Image url="@../img/catogram/초록/전라남도-초록-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "gyeongsangbukdo" fitHeight="117.0" fitWidth="118.0" layoutX="258.0" layoutY="235.0">
+      <ImageView fx:id="gyeongsangbukdo" fitHeight="117.0" fitWidth="118.0" layoutX="258.0" layoutY="235.0">
          <image>
             <Image url="@../img/catogram/파랑/경상북도-파랑-1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id = "chungcheongnamdo" fitHeight="124.0" fitWidth="124.0" layoutX="145.0" layoutY="220.0">
+      <ImageView fx:id="chungcheongnamdo" fitHeight="124.0" fitWidth="124.0" layoutX="145.0" layoutY="220.0">
          <image>
             <Image url="@../img/catogram/빨강/충청남도-빨강-1.png" />
          </image>
@@ -136,18 +136,49 @@
           <NumberAxis side="LEFT" />
         </yAxis>
       </LineChart>
-      <SplitMenuButton fx:id = "electionList" alignment="CENTER" layoutX="58.0" layoutY="32.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="400.0" text="-국회의원 선거 목록-" textAlignment="CENTER">
+      <SplitMenuButton fx:id="electionList" alignment="CENTER" layoutX="58.0" layoutY="32.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="400.0" text="-국회의원 선거 목록-" textAlignment="CENTER">
         <items>
         </items>
       </SplitMenuButton>
-      <TableView fx:id = "electionResult" layoutX="34.0" layoutY="714.0" prefHeight="165.0" prefWidth="443.0">
+      <TableView fx:id="electionResult" layoutX="34.0" layoutY="714.0" prefHeight="165.0" prefWidth="443.0">
         <columns>
-          <TableColumn prefWidth="122.0" text="정당" />
-          <TableColumn text="지역구" />
-            <TableColumn text="비례대표" />
-            <TableColumn text="총합" />
-            <TableColumn text="비율" />
+          <TableColumn fx:id="partyCol" minWidth="122.0" prefWidth="122.0" resizable="false" text="정당" />
+          <TableColumn fx:id="constituencyCol" minWidth="80.0" resizable="false" text="지역구" />
+            <TableColumn fx:id="proportionalRepresentationCol" minWidth="80.0" resizable="false" text="비례대표" />
+            <TableColumn fx:id="amountCol" minWidth="80.0" resizable="false" text="총합" />
+            <TableColumn fx:id="rateCol" minWidth="80.0" resizable="false" text="비율" />
         </columns>
       </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="367.7" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" width="110.0" />
+      <Circle fill="#00adff" layoutX="394.0" layoutY="436.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Circle fill="#00ff41" layoutX="394.0" layoutY="456.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Circle fill="#7c00ff" layoutX="394.0" layoutY="476.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Circle fill="#707070" layoutX="394.0" layoutY="496.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Circle fill="#ff0f00" layoutX="394.0" layoutY="416.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+      <Text fx:id = "party1" layoutX="399.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="70.0">
+         <font>
+            <Font name="NanumSquare" size="11.0" />
+         </font>
+      </Text>
+      <Text fx:id = "party2" layoutX="399.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="70.0">
+         <font>
+            <Font name="NanumSquare" size="11.0" />
+         </font>
+      </Text>
+      <Text fx:id = "party3" layoutX="399.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="70.0">
+         <font>
+            <Font name="NanumSquare" size="11.0" />
+         </font>
+      </Text>
+      <Text fx:id = "party4" layoutX="399.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="70.0">
+         <font>
+            <Font name="NanumSquare" size="11.0" />
+         </font>
+      </Text>
+      <Text fx:id = "party5" layoutX="399.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NONE" textAlignment="CENTER" wrappingWidth="70.0">
+         <font>
+            <Font name="NanumSquare" size="11.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

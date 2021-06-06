@@ -1,105 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?improt javafx.scene.layout.ScrollPane?>
 
-<AnchorPane prefHeight="540.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.candidateInfoController">
-    <children>
-        <ImageView fitHeight="60.0" fitWidth="512.0">
-            <image>
-                <Image url="@../img/메인상단.png" />
-            </image>
-        </ImageView>
-        <ImageView fx:id="liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
-            <image>
-                <Image url="@../img/실시간_투개표_현황.png" />
-            </image>
-        </ImageView>
-        <ImageView fx:id="electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
-            <image>
-                <Image url="@../img/역대_당선_추이2.png" />
-            </image>
-        </ImageView>
-        <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
-            <image>
-                <Image url="@../img/후보자_및_선거_정보2.png" />
-            </image>
-        </ImageView>
-        <ImageView fitHeight="120.0" fitWidth="68.0" layoutX="130.0" layoutY="420.0">
-            <image>
-                <Image url="@../img/빈공간.png" />
-            </image>
-        </ImageView>
-        <ImageView fitHeight="120.0" fitWidth="61.0" layoutX="322.0" layoutY="420.0">
-            <image>
-                <Image url="@../img/빈공간.png" />
-            </image>
-        </ImageView>
-        <Text layoutX="205.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="후보자 정보">
-           <font>
-              <Font name="BM HANNA 11yrs old" size="22.0" />
-           </font>
-        </Text>
-        <Text layoutX="236.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="이름">
-           <font>
-              <Font name="NanumSquare" size="14.0" />
-           </font>
-        </Text>
-        <Text layoutX="236.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="기호">
-           <font>
-              <Font name="NanumSquare" size="14.0" />
-           </font>
-        </Text>
-        <Text layoutX="230.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="정당명">
-           <font>
-              <Font name="NanumSquare" size="14.0" />
-           </font>
-        </Text>
-        <Text layoutX="207.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="생년월일(나이)">
-           <font>
-              <Font name="NanumSquare" size="14.0" />
-           </font>
-        </Text>
-        <Text layoutX="236.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="경력">
-           <font>
-              <Font name="NanumSquare" size="14.0" />
-           </font>
-        </Text>
-        <Text layoutX="236.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="공약">
-           <font>
-              <Font name="NanumSquare" size="14.0" />
-           </font>
-        </Text>
-        <TextField fx:id="name" alignment="CENTER" layoutX="300.0" layoutY="104.0" prefHeight="22.0" prefWidth="161.0" />
-        <TextField fx:id="number" alignment="CENTER" layoutX="300.0" layoutY="133.0" prefHeight="22.0" prefWidth="161.0" />
-        <TextField fx:id="partyName" alignment="CENTER" layoutX="300.0" layoutY="163.0" prefHeight="22.0" prefWidth="161.0" />
-        <TextField fx:id="birth" alignment="CENTER" layoutX="300.0" layoutY="195.0" prefHeight="22.0" prefWidth="161.0" />
-        <ImageView fx:id="candidateImage" fitHeight="105.0" fitWidth="105.0" layoutX="52.0" layoutY="107.0">
-            <image>
-                <Image url="@../img/문재인_사진.jpg" />
-            </image>
-        </ImageView>
-        <ImageView fx:id="candidatePartyImage" fitHeight="53.0" fitWidth="105.0" layoutX="52.0" layoutY="225.0">
-            <image>
-                <Image url="@../img/더불어_민주당.jpg" />
-            </image>
-        </ImageView>
-        <TextArea fx:id="career" layoutX="300.0" layoutY="318.0" prefHeight="77.0" prefWidth="161.0" />
-        <TextArea fx:id="pledge" layoutX="300.0" layoutY="228.0" prefHeight="77.0" prefWidth="161.0" />
-        <ImageView fitHeight="60.0" fitWidth="74.0" layoutX="67.0" layoutY="305.0">
-            <image>
-                <Image url="@../img/home_(1).png" />
-            </image>
-        </ImageView>
-        <Text layoutX="65.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="후보 목록으로">
-           <font>
-              <Font name="NanumSquare" size="14.0" />
-           </font>
-        </Text>
-    </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.candidateInfoController">
+   <children>
+      <ImageView fitHeight="60.0" fitWidth="512.0">
+         <image>
+            <Image url="@../img/메인상단.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="liveVoteInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/실시간_투개표_현황.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="electionHistoryInfoBtn" fitHeight="120.0" fitWidth="130.0" layoutX="383.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/역대_당선_추이2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="130.0" layoutX="192.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/후보자_및_선거_정보2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="68.0" layoutX="130.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/빈공간.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="61.0" layoutX="322.0" layoutY="420.0">
+         <image>
+            <Image url="@../img/빈공간.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="candidateInfo" layoutX="0.0" layoutY="60.0" prefHeight="360.0" prefWidth="512.0" />
+   </children>
 </AnchorPane>
