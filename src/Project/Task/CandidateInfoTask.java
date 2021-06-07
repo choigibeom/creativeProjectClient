@@ -1,6 +1,7 @@
 package Project.Task;
 
 import Project.Persistance.CandidateDTO;
+import Project.Persistance.VotingDTO;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

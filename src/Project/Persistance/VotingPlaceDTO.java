@@ -1,6 +1,8 @@
 package Project.Persistance;
 
-public class VotingPlaceDTO {
+import java.io.Serializable;
+
+public class VotingPlaceDTO implements Serializable {
     private String sgId;
     private String psCode;
     private String psName;

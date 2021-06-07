@@ -42,7 +42,6 @@ public class electionInfoAddController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
     	try{
-
 			socket = new Socket("localhost", 9594);
 			oos = new ObjectOutputStream(socket.getOutputStream());
 			oos.writeObject("5");
@@ -50,13 +49,13 @@ public class electionInfoAddController implements Initializable {
 
 			ois = new ObjectInputStream(socket.getInputStream());
 
-			ArrayList<ElectionDTO> dto = (ArrayList<ElectionDTO>) ois.readObject();
-			election1Title.setText(dto.get(23).getSgName());
-			election1VoteDay.setText(dto.get(23).getSgVotedate().toString());
-			election2Title.setText(dto.get(24).getSgName());
-			election2VoteDay.setText(dto.get(24).getSgVotedate().toString());
-			election3Title.setText(dto.get(25).getSgName());
-			election3VoteDay.setText(dto.get(25).getSgVotedate().toString());
+			ArrayList<ElectionDTO> electiondto = (ArrayList<ElectionDTO>) ois.readObject();
+			election1Title.setText(electiondto.get(23).getSgName());
+			election1VoteDay.setText(electiondto.get(23).getSgVotedate().toString());
+			election2Title.setText(electiondto.get(24).getSgName());
+			election2VoteDay.setText(electiondto.get(24).getSgVotedate().toString());
+			election3Title.setText(electiondto.get(25).getSgName());
+			election3VoteDay.setText(electiondto.get(25).getSgVotedate().toString());
 		}catch(Exception e) {
     		e.printStackTrace();
 		}

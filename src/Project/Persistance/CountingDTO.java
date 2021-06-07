@@ -1,6 +1,8 @@
 package Project.Persistance;
 
-public class CountingDTO {
+import java.io.Serializable;
+
+public class CountingDTO implements Serializable {
     private String sgID;
     private String sggName;
     private String sdName;

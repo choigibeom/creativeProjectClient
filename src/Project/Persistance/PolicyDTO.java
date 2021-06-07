@@ -1,6 +1,8 @@
 package Project.Persistance;
 
-public class PolicyDTO {
+import java.io.Serializable;
+
+public class PolicyDTO implements Serializable {
     private String sgId;
     private String jdName;
     private int prmsOrd1;

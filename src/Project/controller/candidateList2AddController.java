@@ -1,8 +1,16 @@
 package Project.controller;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.net.Socket;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import Project.Persistance.CandidateDTO;
+import Project.Persistance.ElectionDTO;
+import Project.Persistance.VotingDTO;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -54,8 +62,54 @@ public class candidateList2AddController implements Initializable {
 	@FXML private Text candidate14Name; // 후보14 이름
 	@FXML private Text candidate15Name; // 후보15 이름
 
+	private Socket socket;
+	private ObjectOutputStream oos;
+	private ObjectInputStream ois;
+
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
+		try{
+			socket = new Socket("localhost", 9594);
+			oos = new ObjectOutputStream(socket.getOutputStream());
+			ois = new ObjectInputStream(socket.getInputStream());
+			oos.writeObject("17");
+			oos.flush();
+
+			ArrayList<VotingDTO> votingdtolist = (ArrayList<VotingDTO>) ois.readObject();
+			socket.close();
+			//System.out.println(votingdtolist.get(0).getSdName() + ", " + votingdtolist.get(0).getWiwName());
+			for( int i = 0; i < votingdtolist.size(); i++) {
+				constituencyList.getItems().add(new MenuItem(votingdtolist.get(i).getSdName() + ", " + votingdtolist.get(i).getWiwName()));
+			}
+			for( int i = 0; i < votingdtolist.size(); i++) {
+				 String sdName = votingdtolist.get(i).getSdName();
+				 String wiwName = votingdtolist.get(i).getWiwName();
+
+				constituencyList.getItems().get(i).setOnAction((e)->{
+					constituencyList.setText(sdName + ", "+ wiwName);
+					try {
+						socket = new Socket("localhost", 9594);
+						oos = new ObjectOutputStream(socket.getOutputStream());
+						ois = new ObjectInputStream(socket.getInputStream());
+						oos.writeObject("3");
+						oos.flush();
+						oos.writeObject(sdName);
+						oos.flush();
+						oos.writeObject((wiwName));
+						oos.flush();
+						ArrayList<CandidateDTO> candidateList = new ArrayList<>();
+						candidateList = (ArrayList<CandidateDTO>) ois.readObject();
+						System.out.println(candidateList.get(0).getName());
+					} catch (IOException | ClassNotFoundException ioException) {
+						ioException.printStackTrace();
+					}
+
+				});
+			}
+
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
           candidate1.setOnMouseClicked(new EventHandler<MouseEvent>() {
       	     public void handle(MouseEvent event) {
       	    	 changeCandidateInfo();
@@ -135,6 +189,7 @@ public class candidateList2AddController implements Initializable {
     
     public void addConstituencyList(String constituency_in)
     {
+
     	constituencyList.getItems().add(new MenuItem(constituency_in));
     }
     
