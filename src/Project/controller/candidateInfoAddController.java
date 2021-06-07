@@ -52,6 +52,7 @@ public class candidateInfoAddController implements Initializable {
     {
     	try
     	{
+    		//laksjdkljflkjsld
 
     	Parent main = FXMLLoader.load(getClass().getResource("../fxml/candidateList2Add.fxml"));
     	AnchorPane root = (AnchorPane)candidateListBtn.getScene().getRoot();
