@@ -42,7 +42,7 @@ public class electionInfoAddController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
     	try{
-			socket = new Socket("localhost", 9594);
+			socket = new Socket("192.168.237.14", 9594);
 			oos = new ObjectOutputStream(socket.getOutputStream());
 			oos.writeObject("5");
 			oos.flush();

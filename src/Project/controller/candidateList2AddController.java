@@ -69,7 +69,7 @@ public class candidateList2AddController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resoruces) {
 		try{
-			socket = new Socket("localhost", 9594);
+			socket = new Socket("192.168.237.14", 9594);
 			oos = new ObjectOutputStream(socket.getOutputStream());
 			ois = new ObjectInputStream(socket.getInputStream());
 			oos.writeObject("17");
@@ -88,7 +88,7 @@ public class candidateList2AddController implements Initializable {
 				constituencyList.getItems().get(i).setOnAction((e)->{
 					constituencyList.setText(sdName + ", "+ wiwName);
 					try {
-						socket = new Socket("localhost", 9594);
+						socket = new Socket("192.168.237.14", 9594);
 						oos = new ObjectOutputStream(socket.getOutputStream());
 						ois = new ObjectInputStream(socket.getInputStream());
 						oos.writeObject("3");
